@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
+.eslintcache
+.vscode
+
+Caddyfile
+
+#Temp_tests
+/*_temp
+/*._temp.*
+
+#Test_runs video records
+/cypress/videos
+
+#Test_runs screenshots
+/cypress/screenshots
+
+#Downloaded files by test
+/cypress/downloads
+
+#_some_good_code_examples
+/cypress/fixtures/*
+
+#_test_examples
+/cypress/e2e/*-*
