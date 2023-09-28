@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import selectors from "./selectors";
+import selectors from "../support/selectors";
 const { loginField, passwordField } = selectors;
 
 describe('Check Add Nationality',()=>{
