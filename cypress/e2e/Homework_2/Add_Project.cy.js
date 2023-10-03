@@ -5,7 +5,6 @@ const login = new Login
 
 describe('Add project',()=>{
 
-
     it('Check Add project',()=>{
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         login.username()
