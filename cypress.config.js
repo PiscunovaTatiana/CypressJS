@@ -6,6 +6,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on); //for html reporter
       // implement node event listeners here
+    
     },
+    baseUrl:'https://opensource-demo.orangehrmlive.com'
   },
 });
