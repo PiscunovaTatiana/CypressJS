@@ -9,5 +9,6 @@ describe('Check LogIn',()=>{
       cy.get(loginField).type("Admin");
       cy.get(passwordField).type("admin123");
       cy.get('button[type="submit"]').should('be.visible').click();
+      
     })
 })
