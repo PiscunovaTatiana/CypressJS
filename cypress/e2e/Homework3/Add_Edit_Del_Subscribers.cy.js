@@ -7,9 +7,7 @@ const login = new Login
 beforeEach(() => {
   
        cy.visit('/')
-       login.username()
-       login.password()
-       login.btnLogin()
+       login.logInAll()
        cy.contains('Admin')
          .click()
        cy.viewport(1500,1000)

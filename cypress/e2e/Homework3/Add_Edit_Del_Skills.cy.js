@@ -4,9 +4,7 @@ import Login from "../../support/selectors2"
 const login = new Login
 beforeEach(() => {
   cy.visit('/')
-        login.username()
-        login.password()
-        login.btnLogin()
+        login.logInAll()
         cy.contains('Admin')
           .click()
         cy.wait(1000)

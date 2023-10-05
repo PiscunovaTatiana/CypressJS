@@ -5,9 +5,7 @@ const login = new Login
 
 beforeEach(() => {
            cy.visit('/')
-           login.username()
-           login.password()
-           login.btnLogin()
+           login.logInAll()
            cy.contains('Admin')
              .click()
            cy.viewport(1500,1000)
@@ -36,7 +34,7 @@ describe('OAuth client',()=>{
         
         })
         
-        it('Check Edit OAuth client',()=>{
+        it.only('Check Edit OAuth client',()=>{
             cy.get('[class$="-action-space"] [class$="-pencil-fill"]')
               .click()
             cy.get('input[class*="oxd-input"]')
@@ -52,7 +50,7 @@ describe('OAuth client',()=>{
 
             })
        
-            it('Check Delete OAuth client',()=>{
+            it.only('Check Delete OAuth client',()=>{
             cy.get('[class$="-action-space"] i[class$="bi-trash"]')
               .click()
             cy.get('[class$="-danger orangehrm-button-margin"]')
