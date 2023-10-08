@@ -164,8 +164,8 @@ describe('Test Web Site',()=>{
           .click()
         cy.get('textarea[class$="textarea--resize-vertical"]')
           .type("https://www.youtube.com/watch?v=Lx3kZCbFAWI")
-        //cy.contains("Share")
-          //.click()
+        cy.contains("Share")
+          .click()
       })
                                                   
       it('Check Add Post',()=>{
